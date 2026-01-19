@@ -1,0 +1,188 @@
+/* ===== PAGE ===== */
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: radial-gradient(
+      circle at top,
+      rgba(34, 197, 94, 0.35),
+      transparent 60%
+    ),
+    linear-gradient(135deg, #0f172a, #064e3b);
+}
+
+/* ===== CARD (ANIMATION) ===== */
+
+.card {
+  width: 340px;
+  padding: 32px 26px 26px;
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.4),
+    inset 0 1px 1px rgba(255, 255, 255, 0.3);
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  text-align: center;
+
+  animation: slideFadeIn 0.8s ease forwards;
+}
+
+@keyframes slideFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== ICON ===== */
+
+.iconWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.icon {
+  width: 56px;
+  height: 56px;
+  stroke: white;
+  stroke-width: 1.6;
+  fill: none;
+  background: rgba(15, 118, 110, 0.9);
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== TITLE ===== */
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ecfeff;
+  margin-bottom: 18px;
+}
+
+/* ===== INPUTS ===== */
+
+.field {
+  position: relative;
+  margin-bottom: 14px;
+}
+
+.field input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+
+  background: rgba(255, 255, 255, 0.75);
+  color: #0f172a;
+}
+
+.field input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(15, 118, 110, 0.7);
+}
+
+/* 👁️ TOGGLE */
+.eye {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* ===== BUTTON ===== */
+
+.loginBtn {
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px;
+
+  background: linear-gradient(135deg, #0f766e, #065f46);
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+.loginBtn:disabled {
+  opacity: 0.8;
+  cursor: not-allowed;
+}
+
+/* ===== SPINNER ===== */
+
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ===== ERROR ===== */
+
+.error {
+  background: rgba(239, 68, 68, 0.85);
+  color: #ffffff;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+/* ===== BACK TO HOME BUTTON ===== */
+
+/* ===== BACK TO HOME (INSIDE CARD) ===== */
+
+.backLink {
+  margin-top: 14px;
+  background: none;
+  border: none;
+
+  color: #ecfeff;
+  font-size: 14px;
+  cursor: pointer;
+
+  text-decoration: underline;
+  opacity: 0.9;
+}
+
+.backLink:hover {
+  opacity: 1;
+}
+

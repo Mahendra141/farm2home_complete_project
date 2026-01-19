@@ -1,0 +1,181 @@
+.wrapper {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+  margin-bottom: 16px;
+  font-size: 20px;
+  color: #0f172a;
+}
+
+/* ===== TABLE ===== */
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+.table th {
+  background-color: #f8fafc;
+  font-weight: 600;
+  color: #334155;
+}
+
+.table tr:hover {
+  background-color: #f9fafb;
+}
+
+/* ===== STATUS BADGES ===== */
+
+.badge {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.PLACED {
+  background-color: #e0f2fe;
+  color: #0369a1;
+}
+
+.CONFIRMED {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.PACKED {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.OUT_FOR_DELIVERY {
+  background-color: #ffedd5;
+  color: #9a3412;
+}
+
+.DELIVERED {
+  background-color: #bbf7d0;
+  color: #166534;
+}
+
+.CANCELLED {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+/* ===== SELECT ===== */
+
+.select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+/* CLICKABLE ROW */
+.row {
+  cursor: pointer;
+}
+
+/* ===== DRAWER ===== */
+
+.drawerOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+}
+
+.drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 360px;
+  height: 100vh;
+  background: #ffffff;
+  z-index: 1001;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+}
+
+.drawerHeader {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.drawerHeader button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.drawerContent {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.note {
+  margin-top: 12px;
+  font-size: 13px;
+  color: #64748b;
+}
+/* ===== HEADER ===== */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+/* ===== FILTERS ===== */
+
+.filters {
+  display: flex;
+  gap: 8px;
+}
+
+.filterBtn {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.filterBtn:hover {
+  background: #f1f5f9;
+}
+
+.activeFilter {
+  background: #0f766e;
+  color: #ffffff;
+  border-color: #0f766e;
+}
+
+/* ===== EMPTY STATE ===== */
+
+.empty {
+  margin-top: 16px;
+  color: #64748b;
+  font-size: 14px;
+}

@@ -1,0 +1,111 @@
+.hero {
+  position: relative;
+  height: 560px;
+  margin: 24px;
+  border-radius: 20px;
+  overflow: hidden;
+
+  /* 🌾 BACKGROUND IMAGE (JPEG) */
+  background-image: url("/images/hero/3dcrop.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* 🌗 Overlay for text readability */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.65),
+    rgba(0, 0, 0, 0.35)
+  );
+  z-index: 1;
+}
+
+/* Layout */
+.container {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 64px;
+}
+
+/* Content */
+.content {
+  max-width: 620px;
+  color: #ffffff;
+}
+
+/* Headline */
+.title {
+  font-size: 46px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
+
+/* Description */
+.description {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #29d312;
+  margin-bottom: 18px;
+}
+
+/* Trust points */
+.points {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 28px 0;
+}
+
+.points li {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #d1fae5;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.primaryBtn {
+  padding: 14px 32px;
+  background-color: #16a34a;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.primaryBtn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 30px rgba(22, 163, 74, 0.35);
+}
+
+/* 📱 Mobile */
+@media (max-width: 900px) {
+  .hero {
+    height: 480px;
+    margin-top: 72px;
+  }
+
+  .container {
+    padding: 0 28px;
+  }
+
+  .title {
+    font-size: 34px;
+  }
+}

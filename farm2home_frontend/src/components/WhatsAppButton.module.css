@@ -1,0 +1,11 @@
+.button {
+  padding: 12px 24px;
+  background-color: var(--whatsapp-green);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.button:hover {
+  opacity: 0.9;
+}
