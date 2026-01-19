@@ -82,13 +82,17 @@ Admins can:
 ![Home Page](screenshots/home.png)
 
 ### 🧭 Category Selection
-![Category Selection](screenshots/category.png)
+![Category Selection](screenshots/catagory.png)
 
 ### 🥬 Vegetables Category
 ![Vegetables Category](screenshots/cat_vegetables.png)
 
 ### 🍎 Fruits Category
 ![Fruits Category](screenshots/cat_fruits.png)
+
+### 🔍 Search Results
+![Search Results](screenshots/search.png)
+![Search Results](screenshots/searchresults.png)
 
 ### 🛒 Cart & Billing
 ![Cart and Billing](screenshots/cart+billing.png)
