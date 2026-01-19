@@ -77,5 +77,30 @@ Admins can:
 ---
 
 ## 📸 Screenshots
+
 ### 🏠 Home Page
 ![Home Page](screenshots/home.png)
+
+### 🧭 Category Selection
+![Category Selection](screenshots/category.png)
+
+### 🥬 Vegetables Category
+![Vegetables Category](screenshots/cat_vegetables.png)
+
+### 🍎 Fruits Category
+![Fruits Category](screenshots/cat_fruits.png)
+
+### 🛒 Cart & Billing
+![Cart and Billing](screenshots/cart+billing.png)
+
+### 🔐 Admin Login
+![Admin Login](screenshots/admin_login.png)
+
+### 📦 Admin – Products List
+![Admin Products](screenshots/orders.png)
+
+### ➕ Admin – Add Product
+![Admin Add Product](screenshots/products_add.png)
+
+### ✏️ Admin – Add / Edit Product Form
+![Admin Product Form](screenshots/products_add_form.png)
